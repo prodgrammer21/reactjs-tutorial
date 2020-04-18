@@ -1,26 +1,20 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
 
-function App() {
+/* Styles */
+import './App.css'
+
+/* Components */
+import Card from './Card'
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app-main">
+      <Card name="bossROD" age={23} gender="Male" title="Daddy"/>
+      <Card name="bossJOY" age={23} gender="Female" title="Mommy"/>
+      <Card name="bossPIM" age={4} gender="Female" title="Niece"/>
+      <Card name="bossEMS" age={26} gender="Male" title="Idol"/>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
